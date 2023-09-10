@@ -17,6 +17,9 @@ $users | export-csv -NoTypeInformation C:\Temp\users.csv
 
 ##Function 2 - Perform Batch Unlock and Reproting on ADFS for Extranet Smart Lockout (ESL)##
 
+#Go to the Work Directory
+cd C:\Temp
+
 $Sourcefile = "C:\Temp\AD-ESL-usercheck.csv"
 $Exportfile = "C:\Temp\report.html"
 
