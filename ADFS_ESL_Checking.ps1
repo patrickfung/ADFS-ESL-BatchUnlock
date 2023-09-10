@@ -8,7 +8,7 @@ import-module ActiveDirectory
 #Go to the Work Directory
 cd C:\Temp
 
-$users = Get-ADUser -SearchBase "OU=DC,OU=Tree,DC=dotcom" -filter {userAccountControl -eq "512"} | Select-Object -Property userprincipalname
+$users = Get-ADUser -SearchBase "OU=Tree,OU=Forest,DC=Earth" -filter {userAccountControl -eq "512"} | Select-Object -Property userprincipalname
 
 $users | export-csv -NoTypeInformation C:\Temp\users.csv
 
